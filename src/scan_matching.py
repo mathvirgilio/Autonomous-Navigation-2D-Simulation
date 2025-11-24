@@ -1,19 +1,19 @@
 import numpy as np
-import simulation_alt as obj
 import pygame
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from pso import Particle_Swarm_Optimization
 import timeit
-from utils import rotatePoint, relative_error
 import pandas as pd
+from . import simulation_alt as obj
+from .pso import Particle_Swarm_Optimization
+from .utils import rotatePoint, relative_error
 
 #Simulador UV-C
 necessary_dosage = 16.9 #mJ/cm^2
 power = 60 #W
 attenuation = 10 #%
 exposure_time = 0 #segundos
-file_name = 'mapa1.txt' #Arquivo com o mapa
+file_name = 'mapas/mapa1.txt' #Arquivo com o mapa
 initial_pos = np.array([5, 6]) #Ponto de partida
 robot_dim = 2 #Dimensões do robô
 '''

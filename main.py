@@ -1,8 +1,8 @@
 import numpy as np
 import sys
-import simulation_alt as obj
 import timeit
 import pygame
+from src import simulation_alt as obj
 
 #Informações UV-C
 necessary_dosage = 16.9 #mJ/cm^2
@@ -10,7 +10,7 @@ power = 60 #60 #W
 attenuation = 10 #%
 exposure_time = 60 #segundos
 
-file_name = 'mapa1.txt' #Arquivo com o mapa
+file_name = 'mapas/mapa1.txt' #Arquivo com o mapa
 initial_pos = np.array([2, 2]) #Ponto de partida
 robot_dim = 2 #Dimensões do robô
 

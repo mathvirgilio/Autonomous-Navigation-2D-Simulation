@@ -1,9 +1,17 @@
 import math
 import numpy as np
 import sys
-import simulation as obj
 import pygame
 import matplotlib.pyplot as plt
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import sys
+import os
+# Add parent directory to path
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+# Note: scanner.py uses the old simulation.py for compatibility
+# Consider updating to use simulation_alt.py from src/
+import simulation as obj
 
 
 #Informações UV-C
@@ -13,7 +21,7 @@ attenuation = 10 #%
 exposure_time = 0 #segundos
 time_delay = 1 #milisegundos
 
-file_name = 'mapa_britto.txt' #Arquivo com o mapa
+file_name = 'mapas/mapa_britto.txt' #Arquivo com o mapa
 initial_pos = np.array([4, 8]) #Ponto de partida
 robot_dim = 2 #Dimensões do robô
 sensor_range = 4

@@ -2,10 +2,10 @@ from operator import mod
 from turtle import distance
 import numpy as np
 import pygame, sys
-import simulador as sim
-import navegation as nav
 import math
 import matplotlib.pyplot as plt
+from . import simulador as sim
+from . import navegation as nav
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -89,7 +89,7 @@ class simulation():
          self.screen_surf.fill((255, 255, 255))
          self.blocks, self.blocks_surf = sim.initial_drawGrid(self.screen_surf, self.map)
          self.dosage_per_block = np.zeros((self.map.shape[1], self.map.shape[0]))
-         self.image_surf = pygame.image.load("robot.png")
+         self.image_surf = pygame.image.load("assets/robot.png")
          self.image_surf = pygame.transform.scale(self.image_surf, (50, 50))
     
     def execute_navegation(self, power, necessary_dosage, attenuation, exposure_time):

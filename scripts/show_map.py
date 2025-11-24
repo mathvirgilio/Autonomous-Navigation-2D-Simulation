@@ -6,7 +6,7 @@ from matplotlib import colors
 plt.close('all')
 
 #Ler arquivo e armazenar em vetor
-f = open('mapa0.txt') # opening a file
+f = open('mapas/mapa0.txt') # opening a file
 lines = f.read() # reading a file
 lines = [x for x in lines if (x != '\n')]
 mapa = np.array(list(lines))

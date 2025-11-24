@@ -1,17 +1,20 @@
 import numpy as np
-import simulation_alt as obj
 import pygame
-from pso import Particle_Swarm_Optimization
 import timeit
-from scan_matching import ScanMatching
 from numpy.random import randint, choice
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from src import simulation_alt as obj
+from src.pso import Particle_Swarm_Optimization
+from src.scan_matching import ScanMatching
 
 #Simulador UV-C
 necessary_dosage = 16.9 #mJ/cm^2
 power = 60 #W
 attenuation = 10 #%
 exposure_time = 0 #segundos
-file_name = 'mapa1.txt' #Arquivo com o mapa
+file_name = 'mapas/mapa1.txt' #Arquivo com o mapa
 initial_pos_list = [np.array([2, 2]), np.array([5, 2]), np.array([8, 2]), np.array([5, 5]), np.array([5, 8]), np.array([2, 8]), np.array([8, 8])] #Ponto de partida
 robot_dim = 2 #Dimensões do robô
 #PSO
