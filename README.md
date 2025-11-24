@@ -1,6 +1,6 @@
 # Simulador de Navegação Autônoma 2D com Desinfecção UV-C
 
-Simulador completo de navegação autônoma para robôs de desinfecção UV-C em ambientes 2D. O projeto implementa algoritmos de navegação baseados em árvore de decisão, simulação de irradiação UV-C, e técnicas de scan matching usando Particle Swarm Optimization (PSO).
+Simulador completo de navegação autônoma para robôs de desinfecção UV-C em ambientes 2D. O projeto implementa algoritmos de navegação baseados em árvore de decisão, simulação de irradiação UV-C, e técnicas de scan matching usando Particle Swarm Optimization (PSO). Realizado como projeto de iniciação científica.
 
 ## 📋 Índice
 
@@ -252,7 +252,9 @@ Este projeto está sob licença [especifique a licença].
 
 ## 👥 Autores
 
-[Seu nome/equipe]
+Matheus Virgílio da Silva Ferreira, Universidade de Brasília - UnB
+Walter de Britto Vidal Filho (Orientador), Universidade de Brasília - UnB
+
 
 ---
 
